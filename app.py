@@ -9,6 +9,7 @@ import threading
 import time
 import os
 import sys
+import random
 from datetime import datetime, timedelta
 
 app = Flask(__name__)
@@ -259,24 +260,83 @@ def get_subtitles(video_id):
     
     # 創建臨時目錄來存放字幕文件
     with tempfile.TemporaryDirectory() as tmpdir:
-        ydl_opts = {
-            'writesubtitles': True,
-            'writeautomaticsub': True,
-            'subtitleslangs': ['en', 'zh-TW', 'zh-CN', 'en-US', 'en-GB'],
-            'subtitlesformat': 'srt',
-            'skip_download': True,
-            'outtmpl': os.path.join(tmpdir, '%(id)s.%(ext)s'),
-            'quiet': False,
-            'no_warnings': False,
-        }
+        # 嘗試多個 player client，按順序嘗試以避免反爬蟲機制
+        # 優先使用移動端 client，因為它們較少觸發反爬蟲機制
+        player_clients = ['android', 'ios', 'android_embedded', 'tv_embedded', 'web']
+        last_error = None
         
-        try:
-            logger.info(f"[字幕獲取] 開始使用 yt-dlp 獲取影片資訊...")
-            logger.info(f"[字幕獲取] URL: {url}")
-            
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                info = ydl.extract_info(url, download=False)
-                logger.info(f"[字幕獲取] 影片資訊獲取成功")
+        # 檢測是否在雲端環境（Render、Railway 等）
+        # Render 會設置 PORT 環境變數，且通常不會有某些本地環境變數
+        is_cloud_env = (
+            os.environ.get('RENDER') or 
+            os.environ.get('RAILWAY_ENVIRONMENT') or 
+            os.environ.get('FLY_APP_NAME') or
+            (os.environ.get('PORT') and not os.environ.get('HOME'))  # Render 設置 PORT 但沒有 HOME
+        )
+        
+        # 如果無法確定，根據主機名判斷（Render 的主機名通常包含 render.com）
+        if not is_cloud_env:
+            import socket
+            try:
+                hostname = socket.gethostname()
+                if 'render' in hostname.lower() or 'railway' in hostname.lower():
+                    is_cloud_env = True
+            except:
+                pass
+        
+        if is_cloud_env:
+            logger.info("[字幕獲取] 檢測到雲端環境，將使用更保守的策略")
+            base_delay = 3  # 雲端環境使用更長的延遲
+            retry_count = 5
+        else:
+            logger.info("[字幕獲取] 檢測到本地環境，使用標準策略")
+            base_delay = 1
+            retry_count = 3
+        
+        logger.info(f"[字幕獲取] 將嘗試 {len(player_clients)} 個 player client: {', '.join(player_clients)}")
+        logger.info(f"[字幕獲取] 環境設定: base_delay={base_delay}秒, retry_count={retry_count}")
+        
+        for client_index, player_client in enumerate(player_clients):
+            try:
+                logger.info(f"[字幕獲取] ========== 嘗試 {client_index + 1}/{len(player_clients)}: {player_client} ==========")
+                
+                # 在嘗試前添加隨機延遲（避免被識別為機器人）
+                if client_index > 0:
+                    delay = base_delay + random.uniform(0, 2)
+                    logger.info(f"[字幕獲取] 等待 {delay:.2f} 秒後嘗試下一個 client...")
+                    time.sleep(delay)
+                
+                ydl_opts = {
+                    'writesubtitles': True,
+                    'writeautomaticsub': True,
+                    'subtitleslangs': ['en', 'zh-TW', 'zh-CN', 'en-US', 'en-GB'],
+                    'subtitlesformat': 'srt',
+                    'skip_download': True,
+                    'outtmpl': os.path.join(tmpdir, '%(id)s.%(ext)s'),
+                    'quiet': False,
+                    'no_warnings': False,
+                    'extractor_args': {
+                        'youtube': {
+                            'player_client': [player_client]
+                        }
+                    },
+                    # 添加重試機制（雲端環境使用更多重試）
+                    'retries': retry_count,
+                    'fragment_retries': retry_count,
+                    # 添加延遲以避免觸發速率限制（雲端環境使用更長延遲）
+                    'sleep_interval': base_delay,
+                    'sleep_interval_requests': base_delay,
+                    # 添加 User-Agent 偽裝（模擬真實瀏覽器）
+                    'user_agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36',
+                }
+                
+                logger.info(f"[字幕獲取] 開始使用 yt-dlp 獲取影片資訊...")
+                logger.info(f"[字幕獲取] URL: {url}")
+                
+                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                    info = ydl.extract_info(url, download=False)
+                
+                logger.info(f"[字幕獲取] 影片資訊獲取成功 (使用 {player_client})")
                 
                 # 檢查可用的字幕
                 subtitles = info.get('subtitles', {})
@@ -313,7 +373,9 @@ def get_subtitles(video_id):
                 
                 if not en_subtitle_data:
                     logger.warning("[字幕獲取] 找不到英文字幕")
-                    return None
+                    # 繼續嘗試下一個 client
+                    last_error = "找不到英文字幕"
+                    continue
                 
                 logger.info(f"[字幕獲取] 找到英文字幕: {en_lang}")
                 if zh_subtitle_data:
@@ -324,7 +386,8 @@ def get_subtitles(video_id):
                 # 獲取英文字幕
                 en_subtitles = get_subtitle_for_lang(en_subtitle_data, en_lang)
                 if not en_subtitles:
-                    return None
+                    last_error = "無法獲取英文字幕內容"
+                    continue
                 
                 # 獲取中文字幕（如果有的話）
                 zh_subtitles = None
@@ -374,9 +437,32 @@ def get_subtitles(video_id):
                 
                 return merged_subtitles
                     
-        except Exception as e:
-            logger.error(f"Error getting subtitles: {e}", exc_info=True)
-            return None
+            except Exception as e:
+                error_msg = str(e)
+                last_error = error_msg
+                logger.warning(f"[字幕獲取] 使用 {player_client} 失敗: {error_msg}")
+                
+                # 如果是 429 錯誤或反爬蟲錯誤，繼續嘗試下一個 client
+                if '429' in error_msg or 'bot' in error_msg.lower() or 'Sign in to confirm' in error_msg:
+                    logger.info(f"[字幕獲取] 檢測到反爬蟲機制，將嘗試下一個 player client")
+                    # 在嘗試下一個 client 前稍作延遲（雲端環境使用更長延遲）
+                    if client_index < len(player_clients) - 1:
+                        delay = base_delay * 2 + (2 if is_cloud_env else 0)
+                        delay += random.uniform(0, 2)  # 添加隨機延遲
+                        logger.info(f"[字幕獲取] 等待 {delay:.2f} 秒後嘗試下一個 client...")
+                        time.sleep(delay)
+                    continue
+                else:
+                    # 其他錯誤也繼續嘗試
+                    if client_index < len(player_clients) - 1:
+                        delay = base_delay + (1 if is_cloud_env else 0)
+                        delay += random.uniform(0, 1)
+                        time.sleep(delay)
+                    continue
+        
+        # 所有 client 都失敗了
+        logger.error(f"[字幕獲取] 所有 player client 都失敗，最後錯誤: {last_error}")
+        return None
 
 
 def convert_json_to_srt(json_data):
