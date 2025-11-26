@@ -20,10 +20,12 @@ git push origin main
    - **Region**: `Singapore`（或離您最近的區域）
    - **Branch**: `main`
    - **Root Directory**: （留空）
-   - **Runtime**: `Python 3`
+   - **Runtime**: `Python 3`（會自動使用 Python 3.13.0）
    - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120`
    - **Plan**: `Free`
+
+**注意**：本專案需要 Python 3.13，`runtime.txt` 已設定正確版本。
 6. 點擊「Create Web Service」
 
 ### 步驟 3：等待部署
@@ -64,4 +66,5 @@ git push origin main
 ## 🆘 遇到問題？
 
 查看 [DEPLOYMENT.md](DEPLOYMENT.md) 的「故障排除」章節，或檢查 Render 的部署日誌。
+
 

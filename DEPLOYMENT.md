@@ -11,16 +11,21 @@
    - 支援 GitHub 自動部署
    - 配置簡單
    - 自動 HTTPS
+   - ✅ **支援 Python 3.13**
 
 2. **Railway**
    - 免費方案可用（每月 $5 額度）
    - 支援 GitHub 自動部署
    - 配置簡單
+   - ✅ **支援 Python 3.13**
 
 3. **Fly.io**
    - 免費方案可用
    - 支援 GitHub 自動部署
    - 全球 CDN
+   - ⚠️ 需要確認 Python 3.13 支援
+
+**重要**：本專案需要 Python 3.13，請確保選擇的平台支援此版本。
 
 ## 🎯 方法一：使用 Render（推薦）
 
@@ -44,10 +49,12 @@
    - **Region**: 選擇離您最近的區域（如 `Singapore`）
    - **Branch**: `main`（或您的主要分支）
    - **Root Directory**: 留空（使用根目錄）
-   - **Runtime**: `Python 3`
+   - **Runtime**: `Python 3`（會自動使用 `runtime.txt` 中指定的 3.13.0 版本）
    - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120`
    - **Plan**: `Free`（免費方案）
+
+**注意**：本專案需要 Python 3.13，`runtime.txt` 已設定為 `python-3.13.0`，Render 會自動使用此版本。
 
 ### 步驟 4：環境變數（可選）
 
@@ -172,11 +179,17 @@ fly deploy
 - Python 版本不匹配
 - 依賴安裝失敗
 - 啟動命令錯誤
+- 平台不支援 Python 3.13
 
 **解決方法**：
 1. 檢查 `requirements.txt` 是否正確
-2. 檢查 `runtime.txt` 中的 Python 版本
+2. 確認 `runtime.txt` 中設定為 `python-3.13.0`
 3. 查看部署日誌找出錯誤
+4. **Python 3.13 支援**：
+   - ✅ **Render**: 支援 Python 3.13
+   - ✅ **Railway**: 支援 Python 3.13（自動偵測）
+   - ⚠️ **Fly.io**: 需要確認是否支援，可能需要手動指定
+   - ⚠️ **Heroku**: 可能尚未支援 Python 3.13，建議使用 Render 或 Railway
 
 ### 問題 2：應用無法啟動
 
@@ -222,4 +235,5 @@ fly deploy
 ---
 
 **祝您部署順利！** 🎉
+
 
