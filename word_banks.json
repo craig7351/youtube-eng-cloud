@@ -1,0 +1,823 @@
+{
+  "1111": {
+    "words": {
+      "economic": {
+        "added_at": "2025-11-21T00:04:20.874592",
+        "word_info": {
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "Pertaining to an economy.",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "Frugal; cheap (in the sense of representing good value); economical.",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "Pertaining to the study of money and its movement.",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "adjective"
+            }
+          ],
+          "phonetic": "/ˌiːkəˈnɒmɪk/",
+          "word": "economic",
+          "wordTranslation": "經濟的"
+        }
+      },
+      "japan": {
+        "added_at": "2025-11-21T00:04:30.276362",
+        "word_info": {
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "A hard black enamel varnish containing asphalt.",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "Lacquerware.",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "To varnish with japan.",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "verb"
+            }
+          ],
+          "phonetic": "/dʒəˈpæn/",
+          "word": "Japan",
+          "wordTranslation": "日本"
+        }
+      },
+      "unenviable": {
+        "added_at": "2025-11-21T00:04:40.469590",
+        "word_info": {
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "Difficult, undesirable, or unpleasant; not to be envied.",
+                  "example": "Valjean was in the unenviable position of either living with the knowledge an innocent would suffer for his crime or revealing his true identity and going back to prison.",
+                  "exampleZh": "冉阿讓的處境並不令人羨慕，他要么知道無辜者會因自己的罪行而受苦，要么暴露自己的真實身份並返回監獄。"
+                }
+              ],
+              "partOfSpeech": "adjective"
+            }
+          ],
+          "phonetic": "",
+          "word": "unenviable",
+          "wordTranslation": "不值得羨慕的"
+        }
+      },
+      "countries": {
+        "added_at": "2025-11-21T00:10:50.548737",
+        "word_info": {
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "(chiefly British) An area of land; a district, region.",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "A set region of land having particular human occupation or agreed limits, especially inhabited by members of the same race, speakers of the same language etc., or associated with a given person, occupation, species etc.",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "The territory of a nation, especially an independent nation state or formerly independent nation; a political entity asserting ultimate authority over a geographical area; a sovereign state.",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "A style of popular music that originated in the folk music of the rural population of the southern and western United States and characterized by string-band instruments and simple melodies.",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun",
+              "synonyms": [
+                "country",
+                "country and western",
+                "country-western music"
+              ]
+            }
+          ],
+          "phonetic": "/ˈkʌntɹiz/",
+          "word": "countries",
+          "wordTranslation": "國家"
+        }
+      }
+    },
+    "created_at": "2025-11-21T00:04:10.248395",
+    "updated_at": "2025-11-21T00:10:50.548743"
+  },
+  "22222": {
+    "words": {},
+    "created_at": "2025-11-21T00:22:35.785516",
+    "updated_at": "2025-11-21T00:22:35.785522"
+  },
+  "測試用戶_111": {
+    "words": {
+      "actually": {
+        "added_at": "2025-11-21T12:14:36.317404",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "(modal) In act or in fact; really; in truth; positively.",
+                  "definitionZh": "（情態）實際上或實際上；真的;事實上；積極地。",
+                  "example": "Actually, I had nothing to do with that incident.",
+                  "exampleZh": "事實上，我與那次事件無關。"
+                },
+                {
+                  "definition": "Actively.",
+                  "definitionZh": "積極主動。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "adverb",
+              "synonyms": [
+                "as a matter of fact",
+                "in reality",
+                "literally",
+                "really",
+                "truthfully"
+              ]
+            }
+          ],
+          "phonetic": "/-ɪ/",
+          "word": "actually",
+          "wordTranslation": "實際上"
+        },
+        "learning_data": {
+          "level": 1,
+          "correct_count": 1,
+          "wrong_count": 0,
+          "last_review": "2025-11-21T12:57:29.101664",
+          "next_review": "2025-11-22T12:57:29.101664",
+          "review_interval": 1
+        }
+      },
+      "talking": {
+        "added_at": "2025-11-21T12:23:55.117706",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "The action of the verb talk.",
+                  "definitionZh": "動詞talk的動作。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            }
+          ],
+          "phonetic": "/tɑkɪŋ/",
+          "word": "talking",
+          "wordTranslation": "說"
+        },
+        "learning_data": {
+          "level": 1,
+          "correct_count": 1,
+          "wrong_count": 0,
+          "last_review": "2025-11-21T12:57:41.879606",
+          "next_review": "2025-11-22T12:57:41.879606",
+          "review_interval": 1
+        }
+      },
+      "going": {
+        "added_at": "2025-11-21T12:55:48.922892",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "To move:",
+                  "definitionZh": "移動：",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "(chiefly of a machine) To work or function (properly); to move or perform (as required).",
+                  "definitionZh": "（主要是機器）（適當地）工作或發揮作用；移動或執行（根據需要）。",
+                  "example": "The engine just won't go anymore.",
+                  "exampleZh": "引擎不再運轉了。"
+                },
+                {
+                  "definition": "To start; to begin (an action or process).",
+                  "definitionZh": "開始；開始（動作或過程）。",
+                  "example": "Get ready, get set, go!",
+                  "exampleZh": "準備好，整裝待發，出發！"
+                }
+              ],
+              "partOfSpeech": "verb",
+              "synonyms": [
+                "become",
+                "change into",
+                "turn",
+                "cross",
+                "draw",
+                "drift",
+                "fare",
+                "move",
+                "tread",
+                "wend",
+                "date",
+                "go out (with)",
+                "see",
+                "function",
+                "operate",
+                "work",
+                "make one's move",
+                "move",
+                "take one’s turn"
+              ]
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "A departure.",
+                  "definitionZh": "一次出發。",
+                  "example": "Thy going is not lonely, with thee goes thy Husband",
+                  "exampleZh": "你的走並不孤單，你的丈夫也跟著你走"
+                },
+                {
+                  "definition": "The suitability of ground for riding, walking etc.",
+                  "definitionZh": "地面是否適合騎行、步行等",
+                  "example": "The going was very difficult over the ice.",
+                  "exampleZh": "在冰面上行走非常困難。"
+                },
+                {
+                  "definition": "Progress.",
+                  "definitionZh": "進步。",
+                  "example": "We made good going for a while, but then we came to the price.",
+                  "exampleZh": "我們相處了一段時間，但後來我們談到了價格。"
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "Likely to continue; viable.",
+                  "definitionZh": "可能會繼續；可行的。",
+                  "example": "He didn't want to make an unsecured loan to the business because it didn't look like a going concern.",
+                  "exampleZh": "他不想向該企業提供無擔保貸款，因為該企業看起來不像持續經營的企業。"
+                },
+                {
+                  "definition": "Current, prevailing.",
+                  "definitionZh": "當前，盛行。",
+                  "example": "The going rate for manual snow-shoveling is $25 an hour.",
+                  "exampleZh": "手動鏟雪的現行收費為每小時 25 美元。"
+                },
+                {
+                  "definition": "(especially after a noun phrase with a superlative) Available.",
+                  "definitionZh": "（特別是在帶有最高級的名詞短語之後）可用。",
+                  "example": "He has the easiest job going.",
+                  "exampleZh": "他的工作是最輕鬆的。"
+                }
+              ],
+              "partOfSpeech": "adjective"
+            }
+          ],
+          "phonetic": "/ˈɡəʊɪŋ/",
+          "word": "going",
+          "wordTranslation": "去"
+        },
+        "learning_data": {
+          "level": 0,
+          "correct_count": 0,
+          "wrong_count": 1,
+          "last_review": "2025-11-21T12:57:47.885132",
+          "next_review": "2025-11-22T12:57:47.885132",
+          "review_interval": 1
+        }
+      },
+      "program": {
+        "added_at": "2025-11-21T12:56:37.497654",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "A set of structured activities.",
+                  "definitionZh": "一組結構化的活動。",
+                  "example": "Our program for today’s exercise class includes swimming and jogging.",
+                  "exampleZh": "我們今天的運動課程包括游泳和慢跑。"
+                },
+                {
+                  "definition": "A leaflet listing information about a play, game or other activity.",
+                  "definitionZh": "列出有關遊戲、遊戲或其他活動信息的傳單。",
+                  "example": "The program consisted of ads for restaurants and the credits of everyone connected with the play.",
+                  "exampleZh": "該節目包括餐館廣告以及與該劇相關的每個人的製作人員名單。"
+                },
+                {
+                  "definition": "A performance of a show or other broadcast on radio or television.",
+                  "definitionZh": "廣播或電視上的表演或其他廣播節目。",
+                  "example": "Tonight’s program was hosted by Johnny Carson.",
+                  "exampleZh": "今晚的節目由約翰尼·卡森主持。"
+                }
+              ],
+              "partOfSpeech": "noun",
+              "synonyms": [
+                "application",
+                "computer program",
+                "playbill",
+                "show"
+              ]
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "To enter a program or other instructions into (a computer or other electronic device) to instruct it to do a particular task.",
+                  "definitionZh": "將程序或其他指令輸入（計算機或其他電子設備）以指示其執行特定任務。",
+                  "example": "He programmed the DVR to record his favorite show.",
+                  "exampleZh": "他對 DVR 進行了編程來錄製他最喜歡的節目。"
+                },
+                {
+                  "definition": "To develop (software) by writing program code.",
+                  "definitionZh": "通過編寫程序代碼來開發（軟件）。",
+                  "example": "I programmed a small game as a demonstration.",
+                  "exampleZh": "我編寫了一個小遊戲作為演示。"
+                },
+                {
+                  "definition": "To put together the schedule of an event.",
+                  "definitionZh": "整理活動日程。",
+                  "example": "Mary will program Tuesday’s festivities.",
+                  "exampleZh": "瑪麗將安排週二的慶祝活動。"
+                }
+              ],
+              "partOfSpeech": "verb"
+            }
+          ],
+          "phonetic": "/ˈpɹoʊˌɡɹæm/",
+          "word": "program",
+          "wordTranslation": "程式"
+        },
+        "learning_data": {
+          "level": 1,
+          "correct_count": 1,
+          "wrong_count": 0,
+          "last_review": "2025-11-21T12:57:52.624396",
+          "next_review": "2025-11-22T12:57:52.624396",
+          "review_interval": 1
+        }
+      }
+    },
+    "created_at": "2025-11-21T12:10:58.758165",
+    "updated_at": "2025-11-21T12:57:52.624396"
+  },
+  "BOOK_111": {
+    "words": {
+      "proteins": {
+        "added_at": "2025-11-25T14:51:17.484222",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "Any of numerous large, complex naturally-produced molecules composed of one or more long chains of amino acids, in which the amino acid groups are held together by peptide bonds.",
+                  "definitionZh": "由一個或多個氨基酸長鏈組成的眾多大型、複雜的天然分子中的一種，其中氨基酸基團通過肽鍵連接在一起。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "(nutrition) One of three major classes of food or source of food energy (4 kcal/gram) abundant in animal-derived foods (i.e. meat) and some vegetables, such as legumes.",
+                  "definitionZh": "（營養）三大類食物之一或食物能量來源（4 kcal/克），富含動物源性食物（即肉類）和一些蔬菜，如豆類。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "(nutrition) A food rich in protein, often a meat or meat substitute.",
+                  "definitionZh": "（營養）富含蛋白質的食物，通常是肉類或肉類替代品。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            }
+          ],
+          "phonetic": "",
+          "word": "Proteins",
+          "wordTranslation": "蛋白質"
+        },
+        "learning_data": {
+          "level": 1,
+          "correct_count": 1,
+          "wrong_count": 0,
+          "last_review": "2025-11-25T14:52:45.587509",
+          "next_review": "2025-11-26T14:52:45.587509",
+          "review_interval": 1
+        }
+      },
+      "amino": {
+        "added_at": "2025-11-25T14:51:28.309078",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "The amine functional group.",
+                  "definitionZh": "胺官能團。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "Relating to an amine.",
+                  "definitionZh": "與胺有關。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "adjective"
+            }
+          ],
+          "phonetic": "/əˈmiːnəʊ/",
+          "word": "amino",
+          "wordTranslation": "氨基"
+        },
+        "learning_data": {
+          "level": 0,
+          "correct_count": 0,
+          "wrong_count": 0,
+          "last_review": null,
+          "next_review": "2025-11-25T14:51:28.309078",
+          "review_interval": 1
+        }
+      },
+      "bodies": {
+        "added_at": "2025-11-25T14:51:39.415153",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "Physical frame.",
+                  "definitionZh": "物理框架。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "Main section.",
+                  "definitionZh": "主要部分。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "Coherent group.",
+                  "definitionZh": "一致的團體。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "To give body or shape to something.",
+                  "definitionZh": "賦予某物實體或形狀。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "To construct the bodywork of a car.",
+                  "definitionZh": "建造汽車的車身。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "To embody.",
+                  "definitionZh": "體現。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "verb"
+            }
+          ],
+          "phonetic": "",
+          "word": "bodies",
+          "wordTranslation": "屍體"
+        },
+        "learning_data": {
+          "level": 0,
+          "correct_count": 0,
+          "wrong_count": 0,
+          "last_review": null,
+          "next_review": "2025-11-25T14:51:39.415153",
+          "review_interval": 1
+        }
+      },
+      "manufacturing": {
+        "added_at": "2025-11-25T14:51:54.782926",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "To make things, usually on a large scale, with tools and either physical labor or machinery.",
+                  "definitionZh": "使用工具和體力勞動或機械來製造東西，通常是大規模的。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "To work (raw or partly wrought materials) into suitable forms for use.",
+                  "definitionZh": "將（原材料或部分鍛造材料）加工成適合使用的形式。",
+                  "example": "to manufacture wool into blankets",
+                  "exampleZh": "將羊毛製造成毯子"
+                },
+                {
+                  "definition": "To fabricate; to create false evidence to support a point.",
+                  "definitionZh": "捏造；創造虛假證據來支持某一觀點。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "verb"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "The transformation of raw materials into finished products, usually on a large scale.",
+                  "definitionZh": "通常大規模地將原材料轉化為成品。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "The industry in which such products are made.",
+                  "definitionZh": "製造此類產品的行業。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "Used in manufacturing.",
+                  "definitionZh": "用於製造。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "adjective"
+            }
+          ],
+          "phonetic": "/ˌmænjʊˈfækt͡ʃəɹɪŋ/",
+          "word": "manufacturing",
+          "wordTranslation": "製造業"
+        },
+        "learning_data": {
+          "level": 0,
+          "correct_count": 0,
+          "wrong_count": 0,
+          "last_review": null,
+          "next_review": "2025-11-25T14:51:54.782926",
+          "review_interval": 1
+        }
+      }
+    },
+    "created_at": "2025-11-25T14:51:13.225049",
+    "updated_at": "2025-11-25T14:52:45.587509"
+  },
+  "momo_1111": {
+    "words": {
+      "fundamental": {
+        "added_at": "2025-11-26T09:20:16.233228",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "(usually in the plural) A leading or primary principle, rule, law, or article, which serves as the groundwork of a system; an essential part",
+                  "definitionZh": "（通常為複數）作為系統基礎的主要或主要原則、規則、法律或條款；一個重要的組成部分",
+                  "example": "one of the fundamentals of linear algebra",
+                  "exampleZh": "線性代數的基礎之一"
+                },
+                {
+                  "definition": "The lowest frequency of a periodic waveform.",
+                  "definitionZh": "週期波形的最低頻率。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "The lowest partial of a complex tone.",
+                  "definitionZh": "複音的最低分音。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "Pertaining to the foundation or basis; serving for the foundation.",
+                  "definitionZh": "與基礎或基礎有關；為基金會服務。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "Essential, as an element, principle, or law; important; original; elementary.",
+                  "definitionZh": "必不可少的，作為要素、原則或法律；重要的;原來的;初級。",
+                  "example": "A need for belonging seems fundamental to humans.",
+                  "exampleZh": "歸屬感的需求似乎是人類的基本需求。"
+                }
+              ],
+              "partOfSpeech": "adjective",
+              "synonyms": [
+                "groundlaying"
+              ]
+            }
+          ],
+          "phonetic": "/ˌfʌndəˈmɛntəl/",
+          "word": "fundamental",
+          "wordTranslation": "基本的"
+        },
+        "learning_data": {
+          "level": 0,
+          "correct_count": 0,
+          "wrong_count": 0,
+          "last_review": null,
+          "next_review": "2025-11-26T09:20:16.233234",
+          "review_interval": 1
+        }
+      },
+      "secretary": {
+        "added_at": "2025-11-26T09:43:55.061081",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "Someone entrusted with a secret; a confidant.",
+                  "definitionZh": "被託付秘密的人；一個知己。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "A person who keeps records, takes notes and handles general clerical work.",
+                  "definitionZh": "保存記錄、做筆記和處理一般文書工作的人。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "(often capitalized) The head of a department of government.",
+                  "definitionZh": "（通常大寫）政府部門的負責人。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "To serve as a secretary of.",
+                  "definitionZh": "擔任秘書。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "verb"
+            }
+          ],
+          "phonetic": "/ˈsɛk.ɹə.tɹi/",
+          "word": "Secretary",
+          "wordTranslation": "秘書"
+        },
+        "learning_data": {
+          "level": 0,
+          "correct_count": 0,
+          "wrong_count": 0,
+          "last_review": null,
+          "next_review": "2025-11-26T09:43:55.061087",
+          "review_interval": 1
+        }
+      },
+      "rules": {
+        "added_at": "2025-11-26T09:45:38.547325",
+        "word_info": {
+          "isPhrase": false,
+          "meanings": [
+            {
+              "definitions": [
+                {
+                  "definition": "A regulation, law, guideline.",
+                  "definitionZh": "法規、法律、指南。",
+                  "example": "All participants must adhere to the rules.",
+                  "exampleZh": "所有參與者都必須遵守規則。"
+                },
+                {
+                  "definition": "A ruler; device for measuring, a straightedge, a measure.",
+                  "definitionZh": "一把尺子；測量器具，直尺，量具。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "A straight line (continuous mark, as made by a pen or the like), especially one lying across a paper as a guide for writing.",
+                  "definitionZh": "直線（連續的標記，如用鋼筆或類似物製成的），尤指橫在紙上作為書寫指導的直線。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "noun"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "To regulate, be in charge of, make decisions for, reign over.",
+                  "definitionZh": "監管、負責、決策、統治。",
+                  "example": "",
+                  "exampleZh": ""
+                },
+                {
+                  "definition": "To excel.",
+                  "definitionZh": "出類拔萃。",
+                  "example": "This game rules!",
+                  "exampleZh": "這個遊戲規則！"
+                },
+                {
+                  "definition": "To mark (paper or the like) with rules (lines).",
+                  "definitionZh": "用規則（線）標記（紙或類似物）。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "verb"
+            },
+            {
+              "definitions": [
+                {
+                  "definition": "To revel.",
+                  "definitionZh": "狂歡。",
+                  "example": "",
+                  "exampleZh": ""
+                }
+              ],
+              "partOfSpeech": "verb"
+            }
+          ],
+          "phonetic": "/ˈɹuːlz/",
+          "word": "rules",
+          "wordTranslation": "規則"
+        },
+        "learning_data": {
+          "level": 0,
+          "correct_count": 0,
+          "wrong_count": 0,
+          "last_review": null,
+          "next_review": "2025-11-26T09:45:38.547330",
+          "review_interval": 1
+        }
+      }
+    },
+    "created_at": "2025-11-26T09:19:46.993467",
+    "updated_at": "2025-11-26T09:45:38.547331"
+  }
+}

@@ -1,0 +1,133 @@
+name: 建置 Windows EXE
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - 'v*'  # 當推送版本標籤時觸發（例如 v1.0.0）
+  workflow_dispatch:  # 允許手動觸發
+  release:
+    types: [published]  # 當發布新版本時觸發
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write  # 需要寫入權限來創建 Release
+    
+    steps:
+    - name: 檢出程式碼
+      uses: actions/checkout@v4
+      
+    - name: 設定 Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+        
+    - name: 安裝依賴
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pyinstaller
+        
+    - name: 清除舊的建置檔案
+      run: |
+        if (Test-Path build) { Remove-Item -Recurse -Force build }
+        if (Test-Path dist) { Remove-Item -Recurse -Force dist }
+        if (Test-Path english_learning.spec) { Remove-Item -Force english_learning.spec }
+        
+    - name: 使用 PyInstaller 打包
+      run: |
+        python -m PyInstaller --noconfirm --onefile --name english_learning --add-data "templates;templates" --add-data "static;static" run.py
+        
+    - name: 複製 JSON 資料檔
+      run: |
+        if (Test-Path word_banks.json) { Copy-Item word_banks.json dist\ }
+        if (Test-Path user_data.json) { Copy-Item user_data.json dist\ }
+        if (Test-Path bookmarks.json) { Copy-Item bookmarks.json dist\ }
+        if (Test-Path subtitle_cache.json) { Copy-Item subtitle_cache.json dist\ }
+        if (Test-Path translation_cache.json) { Copy-Item translation_cache.json dist\ }
+        
+    - name: 從 CHANGELOG、Git Tag 或 Release 取得版本號
+      id: get_version
+      run: |
+        if ($env:GITHUB_EVENT_NAME -eq 'release') {
+          # 從 release 事件取得版本號
+          $RELEASE_JSON = Get-Content $env:GITHUB_EVENT_PATH -Raw | ConvertFrom-Json
+          $VERSION = $RELEASE_JSON.release.tag_name -replace '^v', ''
+          echo "從 Release 事件取得版本號: $VERSION"
+        } elseif ($env:GITHUB_REF -like 'refs/tags/v*') {
+          # 從 git tag 取得版本號（例如 v1.0.0 -> 1.0.0）
+          $VERSION = $env:GITHUB_REF -replace 'refs/tags/v', ''
+          echo "從 Git Tag 取得版本號: $VERSION"
+        } else {
+          # 從 CHANGELOG.md 取得最新版本號
+          $CHANGELOG = Get-Content CHANGELOG.md -Raw
+          if ($CHANGELOG -match '## \[(\d+\.\d+\.\d+)\]') {
+            $VERSION = $matches[1]
+            echo "從 CHANGELOG 取得版本號: $VERSION"
+          } else {
+            # 如果都找不到，使用預設版本號
+            $VERSION = "1.0.0"
+            echo "使用預設版本號: $VERSION"
+          }
+        }
+        echo "VERSION=$VERSION" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+        "version=$VERSION" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+        
+    - name: 重命名執行檔（加上版本號）
+      run: |
+        if (Test-Path dist\english_learning.exe) {
+          $VERSION = "${{ steps.get_version.outputs.version }}"
+          Rename-Item -Path dist\english_learning.exe -NewName "english_learning-$VERSION.exe"
+          echo "已重命名為: english_learning-$VERSION.exe"
+        }
+        
+    - name: 上傳建置產物
+      uses: actions/upload-artifact@v4
+      with:
+        name: english-learning-exe
+        path: dist/english_learning-*.exe
+        retention-days: 30
+        
+    - name: 上傳所有 dist 檔案（包含 JSON）
+      uses: actions/upload-artifact@v4
+      with:
+        name: english-learning-dist
+        path: dist/*
+        retention-days: 30
+        
+    - name: 上傳檔案到現有 Release（當透過 release 事件觸發時）
+      if: github.event_name == 'release'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/english_learning-*.exe
+        tag_name: ${{ github.event.release.tag_name }}
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: 創建新的 GitHub Release（當推送代碼或標籤時）
+      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v'))
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/english_learning-*.exe
+        tag_name: v${{ steps.get_version.outputs.version }}
+        name: Release v${{ steps.get_version.outputs.version }}
+        body: |
+          ## 英文學習系統 v${{ steps.get_version.outputs.version }}
+          
+          ### 📦 下載
+          - **english_learning-${{ steps.get_version.outputs.version }}.exe** - Windows 可執行檔
+          
+          ### 📝 更新內容
+          請查看 [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) 了解詳細更新內容。
+          
+          ### 🚀 使用方式
+          1. 下載 `english_learning-${{ steps.get_version.outputs.version }}.exe`
+          2. 雙擊執行即可使用
+          3. 程式會自動在瀏覽器開啟 http://localhost:5000
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+

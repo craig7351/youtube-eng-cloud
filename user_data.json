@@ -1,0 +1,1072 @@
+{
+  "測試用戶": {
+    "learning_time": 586,
+    "videos_watched": 1,
+    "words_added": 0,
+    "review_sessions": 0,
+    "review_correct": 0,
+    "review_total": 0,
+    "last_active": "2025-11-26T09:30:03.806341",
+    "created_at": "2025-11-21T12:11:53.006620",
+    "learning_records": [
+      {
+        "id": "1763698313007_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T12:11:53.007118",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T04:11:53.005Z"
+        }
+      },
+      {
+        "id": "1763698392097_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:13:12.097538",
+        "data": {
+          "word": "signs"
+        }
+      },
+      {
+        "id": "1763698466049_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:14:26.049769",
+        "data": {
+          "word": "actually"
+        }
+      },
+      {
+        "id": "1763698470710_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-21T12:14:30.710626",
+        "data": {
+          "word": "actually",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1763698477926_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-21T12:14:37.926362",
+        "data": {
+          "word": "actually",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1763698483087_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:14:43.087294",
+        "data": {
+          "word": "garbage"
+        }
+      },
+      {
+        "id": "1763698582235_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:16:22.235194",
+        "data": {
+          "word": "comments"
+        }
+      },
+      {
+        "id": "1763699014561_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T12:23:34.561181",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T04:23:34.550Z"
+        }
+      },
+      {
+        "id": "1763699020757_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:23:40.757754",
+        "data": {
+          "word": "talking"
+        }
+      },
+      {
+        "id": "1763699036204_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-21T12:23:56.204232",
+        "data": {
+          "word": "talking",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1763699045410_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:24:05.410556",
+        "data": {
+          "word": "signing"
+        }
+      },
+      {
+        "id": "1763699079532_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:24:39.532852",
+        "data": {
+          "word": "wrong"
+        }
+      },
+      {
+        "id": "1763699102122_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:25:02.122677",
+        "data": {
+          "word": "today"
+        }
+      },
+      {
+        "id": "1763699139192_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T12:25:39.192297",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T04:25:39.180Z"
+        }
+      },
+      {
+        "id": "1763699143179_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:25:43.179230",
+        "data": {
+          "word": "everybody"
+        }
+      },
+      {
+        "id": "1763699170249_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:26:10.249570",
+        "data": {
+          "word": "back"
+        }
+      },
+      {
+        "id": "1763699177736_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:26:17.736993",
+        "data": {
+          "word": "today"
+        }
+      },
+      {
+        "id": "1763699206259_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T12:26:46.259999",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T04:26:46.248Z"
+        }
+      },
+      {
+        "id": "1763699223450_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:27:03.450415",
+        "data": {
+          "word": "going"
+        }
+      },
+      {
+        "id": "1763699392917_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T12:29:52.917763",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T04:29:52.604Z"
+        }
+      },
+      {
+        "id": "1763699457390_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T12:30:57.390068",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T04:30:57.079Z"
+        }
+      },
+      {
+        "id": "1763699479028_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:31:19.028494",
+        "data": {
+          "word": "never"
+        }
+      },
+      {
+        "id": "1763699608397_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T12:33:28.397779",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T04:33:28.385Z"
+        }
+      },
+      {
+        "id": "1763699620932_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:33:40.932153",
+        "data": {
+          "word": "talking"
+        }
+      },
+      {
+        "id": "1763699643193_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:34:03.193891",
+        "data": {
+          "word": "wrong"
+        }
+      },
+      {
+        "id": "1763700923808_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T12:55:23.808365",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T04:55:23.494Z"
+        }
+      },
+      {
+        "id": "1763700944308_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:55:44.308063",
+        "data": {
+          "word": "going"
+        }
+      },
+      {
+        "id": "1763700950545_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-21T12:55:50.545390",
+        "data": {
+          "word": "going",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1763700973693_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-21T12:56:13.693964",
+        "data": {
+          "word": "program"
+        }
+      },
+      {
+        "id": "1763700998997_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-21T12:56:38.997709",
+        "data": {
+          "word": "program",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1763701072934_word_review",
+        "type": "word_review",
+        "timestamp": "2025-11-21T12:57:52.934265",
+        "data": {
+          "word_count": 4,
+          "correct_answers": 3,
+          "accuracy": 75,
+          "mode": "spaced",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1764117800048_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:43:20.048192",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:43:20.046Z"
+        }
+      },
+      {
+        "id": "1764117986256_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:46:26.256356",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:46:26.254Z"
+        }
+      },
+      {
+        "id": "1764118123674_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:48:43.674906",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:48:43.673Z"
+        }
+      },
+      {
+        "id": "1764118520805_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:55:20.805649",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:55:20.494Z"
+        }
+      },
+      {
+        "id": "1764118918881_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T09:01:58.881727",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T01:01:58.879Z"
+        }
+      },
+      {
+        "id": "1764120017045_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T09:20:17.045996",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T01:20:17.043Z"
+        }
+      }
+    ]
+  },
+  "BOOK": {
+    "learning_time": 349,
+    "videos_watched": 1,
+    "words_added": 0,
+    "review_sessions": 1,
+    "review_correct": 4,
+    "review_total": 4,
+    "last_active": "2025-11-25T16:38:15.815424",
+    "created_at": "2025-11-21T13:00:16.387106",
+    "learning_records": [
+      {
+        "id": "1763701216387_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T13:00:16.387968",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T05:00:16.384Z"
+        }
+      },
+      {
+        "id": "1763983304490_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T19:21:44.490739",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T11:21:44.488Z"
+        }
+      },
+      {
+        "id": "1763983948301_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T19:32:28.301541",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T11:32:28.299Z"
+        }
+      },
+      {
+        "id": "1763983974045_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T19:32:54.045619",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T11:32:54.043Z"
+        }
+      },
+      {
+        "id": "1763984082016_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T19:34:42.016901",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T11:34:41.705Z"
+        }
+      },
+      {
+        "id": "1763989737398_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T21:08:57.398851",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T13:08:56.235Z"
+        }
+      },
+      {
+        "id": "1763989781010_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-24T21:09:41.010290",
+        "data": {
+          "word": "another"
+        }
+      },
+      {
+        "id": "1763990924577_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T21:28:44.577804",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T13:28:44.575Z"
+        }
+      },
+      {
+        "id": "1763990948285_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T21:29:08.285308",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T13:29:07.091Z"
+        }
+      },
+      {
+        "id": "1763991781505_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T21:43:01.505812",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T13:43:01.503Z"
+        }
+      },
+      {
+        "id": "1763991802992_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T21:43:22.992569",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T13:43:22.989Z"
+        }
+      },
+      {
+        "id": "1764053425788_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T14:50:25.788713",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T06:50:25.786Z"
+        }
+      },
+      {
+        "id": "1764053465552_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-25T14:51:05.552769",
+        "data": {
+          "word": "Proteins"
+        }
+      },
+      {
+        "id": "1764053478588_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-25T14:51:18.588517",
+        "data": {
+          "word": "Proteins",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1764053485873_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-25T14:51:25.873453",
+        "data": {
+          "word": "amino"
+        }
+      },
+      {
+        "id": "1764053489403_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-25T14:51:29.403099",
+        "data": {
+          "word": "amino",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1764053496815_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-25T14:51:36.815162",
+        "data": {
+          "word": "bodies"
+        }
+      },
+      {
+        "id": "1764053500615_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-25T14:51:40.615880",
+        "data": {
+          "word": "bodies",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1764053512350_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-25T14:51:52.350257",
+        "data": {
+          "word": "manufacturing"
+        }
+      },
+      {
+        "id": "1764053515857_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-25T14:51:55.857540",
+        "data": {
+          "word": "manufacturing",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1764053559577_word_review",
+        "type": "word_review",
+        "timestamp": "2025-11-25T14:52:39.577735",
+        "data": {
+          "word_count": 4,
+          "correct_answers": 4,
+          "accuracy": 100,
+          "mode": "random",
+          "bank_name": "111"
+        }
+      },
+      {
+        "id": "1764058047086_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:07:27.086089",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:07:27.059Z"
+        }
+      },
+      {
+        "id": "1764058059907_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:07:39.907600",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:07:39.902Z"
+        }
+      },
+      {
+        "id": "1764058084771_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:08:04.771557",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:08:04.768Z"
+        }
+      },
+      {
+        "id": "1764058140808_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:09:00.808346",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:09:00.793Z"
+        }
+      },
+      {
+        "id": "1764058791523_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:19:51.523277",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:19:51.520Z"
+        }
+      },
+      {
+        "id": "1764059514719_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:31:54.719701",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:31:54.715Z"
+        }
+      },
+      {
+        "id": "1764059546664_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:32:26.664394",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:32:26.655Z"
+        }
+      },
+      {
+        "id": "1764059897435_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:38:17.435688",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:38:17.431Z"
+        }
+      }
+    ]
+  },
+  "momo": {
+    "learning_time": 1280,
+    "videos_watched": 1,
+    "words_added": 0,
+    "review_sessions": 1,
+    "review_correct": 1,
+    "review_total": 3,
+    "last_active": "2025-11-26T09:46:19.540672",
+    "created_at": "2025-11-21T13:01:16.260130",
+    "learning_records": [
+      {
+        "id": "1763701276261_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T13:01:16.261085",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T05:01:15.953Z"
+        }
+      },
+      {
+        "id": "1763712115948_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-21T16:01:55.948815",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-21T08:01:55.642Z"
+        }
+      },
+      {
+        "id": "1763910444402_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-23T23:07:24.402204",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-23T15:07:24.390Z"
+        }
+      },
+      {
+        "id": "1763910538128_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-23T23:08:58.128202",
+        "data": {
+          "word": "myself"
+        }
+      },
+      {
+        "id": "1764116852806_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:27:32.806903",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:27:32.804Z"
+        }
+      },
+      {
+        "id": "1764117294450_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:34:54.450919",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:34:54.140Z"
+        }
+      },
+      {
+        "id": "1764117324046_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:24.046221",
+        "data": {
+          "word": "Secretary"
+        }
+      },
+      {
+        "id": "1764117327037_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:27.037848",
+        "data": {
+          "word": "Secretary"
+        }
+      },
+      {
+        "id": "1764117330364_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:30.364893",
+        "data": {
+          "word": "Secretary"
+        }
+      },
+      {
+        "id": "1764117333775_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:33.775508",
+        "data": {
+          "word": "shakeup"
+        }
+      },
+      {
+        "id": "1764117333868_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:33.868046",
+        "data": {
+          "word": "Here"
+        }
+      },
+      {
+        "id": "1764117334086_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:34.086140",
+        "data": {
+          "word": "Home"
+        }
+      },
+      {
+        "id": "1764117334099_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:34.099875",
+        "data": {
+          "word": "Secretary"
+        }
+      },
+      {
+        "id": "1764117337277_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:37.277196",
+        "data": {
+          "word": "Secretary"
+        }
+      },
+      {
+        "id": "1764117342665_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:42.665269",
+        "data": {
+          "word": "Home"
+        }
+      },
+      {
+        "id": "1764117343265_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:43.265459",
+        "data": {
+          "word": "days"
+        }
+      },
+      {
+        "id": "1764117346821_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:46.822002",
+        "data": {
+          "word": "Here"
+        }
+      },
+      {
+        "id": "1764117350654_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T08:35:50.654773",
+        "data": {
+          "word": "Home"
+        }
+      },
+      {
+        "id": "1764118252300_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:50:52.300838",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:50:51.998Z"
+        }
+      },
+      {
+        "id": "1764118394407_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:53:14.407612",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:53:14.404Z"
+        }
+      },
+      {
+        "id": "1764118678761_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T08:57:58.761774",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T00:57:58.759Z"
+        }
+      },
+      {
+        "id": "1764119832516_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T09:17:12.516267",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T01:17:12.513Z"
+        }
+      },
+      {
+        "id": "1764120006366_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T09:20:06.366533",
+        "data": {
+          "word": "fundamental"
+        }
+      },
+      {
+        "id": "1764120017608_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-26T09:20:17.608945",
+        "data": {
+          "word": "fundamental",
+          "bank_name": "1111"
+        }
+      },
+      {
+        "id": "1764120137172_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T09:22:17.172202",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T01:22:17.170Z"
+        }
+      },
+      {
+        "id": "1764121425129_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-26T09:43:45.129753",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-26T01:43:44.825Z"
+        }
+      },
+      {
+        "id": "1764121431961_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T09:43:51.961261",
+        "data": {
+          "word": "Secretary"
+        }
+      },
+      {
+        "id": "1764121436118_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-26T09:43:56.118814",
+        "data": {
+          "word": "Secretary",
+          "bank_name": "1111"
+        }
+      },
+      {
+        "id": "1764121507510_word_review",
+        "type": "word_review",
+        "timestamp": "2025-11-26T09:45:07.510827",
+        "data": {
+          "word_count": 2,
+          "correct_answers": 1,
+          "accuracy": 50,
+          "mode": "fill-in-blank",
+          "bank_name": "1111"
+        }
+      },
+      {
+        "id": "1764121532032_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-26T09:45:32.032921",
+        "data": {
+          "word": "rules"
+        }
+      },
+      {
+        "id": "1764121544205_word_added",
+        "type": "word_added",
+        "timestamp": "2025-11-26T09:45:44.205636",
+        "data": {
+          "word": "rules",
+          "bank_name": "1111"
+        }
+      },
+      {
+        "id": "1764121579856_word_review",
+        "type": "word_review",
+        "timestamp": "2025-11-26T09:46:19.856782",
+        "data": {
+          "word_count": 3,
+          "correct_answers": 1,
+          "accuracy": 33,
+          "mode": "fill-in-blank",
+          "bank_name": "1111"
+        }
+      }
+    ]
+  },
+  "1234": {
+    "learning_time": 171,
+    "videos_watched": 1,
+    "words_added": 0,
+    "review_sessions": 0,
+    "review_correct": 0,
+    "review_total": 0,
+    "last_active": "2025-11-24T09:14:04.816312",
+    "created_at": "2025-11-24T09:11:04.894217",
+    "learning_records": [
+      {
+        "id": "1763946672990_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T09:11:12.990896",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T01:11:12.979Z"
+        }
+      },
+      {
+        "id": "1763946740796_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-24T09:12:20.796944",
+        "data": {
+          "word": "migration"
+        }
+      }
+    ]
+  },
+  "TestUser": {
+    "learning_time": 416,
+    "videos_watched": 1,
+    "words_added": 0,
+    "review_sessions": 0,
+    "review_correct": 0,
+    "review_total": 0,
+    "last_active": "2025-11-24T09:30:22.672916",
+    "created_at": "2025-11-24T09:15:38.886582",
+    "learning_records": [
+      {
+        "id": "1763946938887_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T09:15:38.887557",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T01:15:38.884Z"
+        }
+      },
+      {
+        "id": "1763946975084_word_lookup",
+        "type": "word_lookup",
+        "timestamp": "2025-11-24T09:16:15.084672",
+        "data": {
+          "word": "trunks"
+        }
+      },
+      {
+        "id": "1763947079902_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T09:17:59.902602",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T01:17:59.599Z"
+        }
+      },
+      {
+        "id": "1763947105743_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T09:18:25.743334",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T01:18:25.439Z"
+        }
+      },
+      {
+        "id": "1763947157119_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T09:19:17.119057",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T01:19:16.815Z"
+        }
+      },
+      {
+        "id": "1763947266238_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T09:21:06.238900",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T01:21:06.236Z"
+        }
+      },
+      {
+        "id": "1763947406508_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T09:23:26.508524",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T01:23:26.206Z"
+        }
+      },
+      {
+        "id": "1763947838919_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-24T09:30:38.919344",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-24T01:30:38.917Z"
+        }
+      }
+    ]
+  },
+  "BOOK2": {
+    "learning_time": 79,
+    "videos_watched": 1,
+    "words_added": 0,
+    "review_sessions": 0,
+    "review_correct": 0,
+    "review_total": 0,
+    "last_active": "2025-11-25T16:35:25.163007",
+    "created_at": "2025-11-25T16:11:30.832570",
+    "learning_records": [
+      {
+        "id": "1764058290838_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:11:30.838567",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:11:30.525Z"
+        }
+      },
+      {
+        "id": "1764058407721_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:13:27.721870",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:13:27.719Z"
+        }
+      },
+      {
+        "id": "1764058515838_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:15:15.838023",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:15:15.834Z"
+        }
+      },
+      {
+        "id": "1764058598813_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:16:38.813098",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:16:38.811Z"
+        }
+      },
+      {
+        "id": "1764059645514_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:34:05.514857",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:34:05.511Z"
+        }
+      },
+      {
+        "id": "1764059731795_video_watch",
+        "type": "video_watch",
+        "timestamp": "2025-11-25T16:35:31.795981",
+        "data": {
+          "action": "start",
+          "timestamp": "2025-11-25T08:35:31.793Z"
+        }
+      }
+    ]
+  }
+}
